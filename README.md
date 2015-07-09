@@ -13,3 +13,9 @@ C#常用类汇总
 读取ini文件下指定key值的value（含重载）；
 读取ini文件下指定结点的所有条目(key=value)；
 创建空文件ini。
+
+2,Fields.cs add by zhangbc 2015-07-09
+应用单例模式实现，实现iniFile的各种操作，用途有：保存系统基础配置信息，保存用户登录信息，填充Property等。
+
+3,propertyList.cs add by zhangbc 2015-07-09
+实现自定义属性类
