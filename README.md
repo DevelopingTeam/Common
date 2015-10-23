@@ -21,4 +21,15 @@ C#常用类汇总
 实现自定义属性类
 
 4，txtImport.cs  add by zhangbc 2015-10-23 
- 	应用单例模式实现，将txt文本数据数据导入到DataGridView中.
+ 	应用单例模式实现，将txt文本数据数据导入到DataGridView中.文本数据用制表符\t作为分隔符，第一行为表头，数据行从第二行开始，getTabHeader此方法是读取APP配置文件方法，为初始化表头信息的第二种方法。Appconfiguration如下：
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!--表头配置 '_'作为分隔符使用-->
+  <appSettings>
+    <add key = "FinalSum_01" value = "提交金额"/>
+    <add key = "FinalSum_02" value = "实发金额"/>
+    …… ……
+  </appSettings>
+  
+</configuration>
+
