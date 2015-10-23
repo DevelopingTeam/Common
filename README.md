@@ -19,3 +19,6 @@ C#常用类汇总
 
 3,propertyList.cs add by zhangbc 2015-07-09
 实现自定义属性类
+
+4，txtImport.cs  add by zhangbc 2015-10-23 
+ 	应用单例模式实现，将txt文本数据数据导入到DataGridView中.
