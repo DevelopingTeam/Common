@@ -29,6 +29,29 @@ namespace test
         }
 
         /// <summary>
+        /// 获取Table表头配置信息
+        /// </summary>
+        /// <param name="Table">表名</param>
+        /// <returns>表头信息(以字典存储)</returns>
+        public Dictionary<string,string> getTabHeader(string table)
+        {
+            string[] keys = ConfigurationManager.AppSettings.AllKeys;
+            Dictionary<string, string> fieldsDict = new Dictionary<string, string>();
+
+            foreach (var key in keys)
+            {
+                if (key.Split('_')[0] == table)
+                {
+                    string val = ConfigurationManager.AppSettings[key];
+                    fieldsDict.Add(key, val);
+                }                
+            }
+
+            return fieldsDict;
+        }
+
+
+        /// <summary>
         /// 导入数据文件
         /// </summary>
         /// <param name="path">文件及其路径</param>
